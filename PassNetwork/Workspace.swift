@@ -11,9 +11,10 @@ struct Workspace: View {
     var body: some View {
         VStack{
 
+
             Spacer()
             SearchBar()
-        }.padding()
+        }
     }
 }
 

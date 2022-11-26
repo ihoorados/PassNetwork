@@ -20,28 +20,28 @@ struct SearchBar: View {
                 Text("POST")
                 Text("PUT")
             }
-            .frame(width: 60.0,height: 44.0)
+            .frame(width: 60.0,height: 34.0)
             .background(Color.gray)
             .foregroundColor(.white)
             .cornerRadius(8.0)
             .font(.headline)
 
             TextField("Enter request URL", text: $username)
-            .frame(height: 44.0)
+            .textFieldStyle(.roundedBorder)
             .disableAutocorrection(true)
-            .border(.gray)
-            .cornerRadius(8.0)
+            .frame(height: 44.0)
 
             Button("Send") {
 
             }
-            .frame(width: 88.0,height: 44.0)
+            .frame(width: 64.0,height: 34.0)
             .background(Color.blue)
             .foregroundColor(.white)
             .cornerRadius(8.0)
-
+            .font(.headline)
         }
         .frame(height: 44.0)
+        .padding()
         //.background(Color.red)
     }
 }
