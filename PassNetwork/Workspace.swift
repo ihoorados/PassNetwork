@@ -9,11 +9,19 @@ import SwiftUI
 
 struct Workspace: View {
     var body: some View {
-        VStack{
+        VStack(alignment:.center,spacing: 12){
 
             Spacer()
+            ResponseView()
+                .frame(height: 200)
+                .background(Color(UIColor.secondarySystemBackground))
+                .cornerRadius(12.0)
             KeyValueColloctions()
             SearchBar()
+            Text("Pass Network 2022")
+                .foregroundColor(.gray)
+                .font(.footnote)
+
         }
     }
 }

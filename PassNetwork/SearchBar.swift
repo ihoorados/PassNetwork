@@ -41,7 +41,6 @@ struct SearchBar: View {
             .font(.headline)
         }
         .frame(height: 44.0)
-        .padding()
         //.background(Color.red)
     }
 }

@@ -21,6 +21,8 @@
 		70102BFB293233CD00E8E99B /* KeyValueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70102BFA293233CC00E8E99B /* KeyValueView.swift */; };
 		70102BFD2932370300E8E99B /* KeyValueColloctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70102BFC2932370300E8E99B /* KeyValueColloctions.swift */; };
 		70102BFF29323A0000E8E99B /* KeyValueToolbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70102BFE29323A0000E8E99B /* KeyValueToolbarView.swift */; };
+		70102C012932420500E8E99B /* ResponseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70102C002932420500E8E99B /* ResponseView.swift */; };
+		70A881BB2932886000531C05 /* NetworkPlugins in Frameworks */ = {isa = PBXBuildFile; productRef = 70A881BA2932886000531C05 /* NetworkPlugins */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,7 @@
 		70102BFA293233CC00E8E99B /* KeyValueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyValueView.swift; sourceTree = "<group>"; };
 		70102BFC2932370300E8E99B /* KeyValueColloctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyValueColloctions.swift; sourceTree = "<group>"; };
 		70102BFE29323A0000E8E99B /* KeyValueToolbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyValueToolbarView.swift; sourceTree = "<group>"; };
+		70102C002932420500E8E99B /* ResponseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70A881BB2932886000531C05 /* NetworkPlugins in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,6 +115,7 @@
 				70102BC7293164D400E8E99B /* PassNetworkApp.swift */,
 				70102BC9293164D400E8E99B /* ContentView.swift */,
 				70102BFC2932370300E8E99B /* KeyValueColloctions.swift */,
+				70102C002932420500E8E99B /* ResponseView.swift */,
 				70102BFE29323A0000E8E99B /* KeyValueToolbarView.swift */,
 				70102BFA293233CC00E8E99B /* KeyValueView.swift */,
 				70102BF62931653A00E8E99B /* Workspace.swift */,
@@ -164,6 +169,9 @@
 			dependencies = (
 			);
 			name = PassNetwork;
+			packageProductDependencies = (
+				70A881BA2932886000531C05 /* NetworkPlugins */,
+			);
 			productName = PassNetwork;
 			productReference = 70102BC4293164D400E8E99B /* PassNetwork.app */;
 			productType = "com.apple.product-type.application";
@@ -236,6 +244,9 @@
 				Base,
 			);
 			mainGroup = 70102BBB293164D400E8E99B;
+			packageReferences = (
+				70A881B92932886000531C05 /* XCRemoteSwiftPackageReference "NetworkPlugins" */,
+			);
 			productRefGroup = 70102BC5293164D400E8E99B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -283,6 +294,7 @@
 				70102BF72931653A00E8E99B /* Workspace.swift in Sources */,
 				70102BFD2932370300E8E99B /* KeyValueColloctions.swift in Sources */,
 				70102BCA293164D400E8E99B /* ContentView.swift in Sources */,
+				70102C012932420500E8E99B /* ResponseView.swift in Sources */,
 				70102BC8293164D400E8E99B /* PassNetworkApp.swift in Sources */,
 				70102BF9293217D900E8E99B /* SearchBar.swift in Sources */,
 				70102BFB293233CD00E8E99B /* KeyValueView.swift in Sources */,
@@ -445,6 +457,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"PassNetwork/Preview Content\"";
+				DEVELOPMENT_TEAM = 6URE3UAR5H;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -474,6 +487,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"PassNetwork/Preview Content\"";
+				DEVELOPMENT_TEAM = 6URE3UAR5H;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -607,6 +621,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		70A881B92932886000531C05 /* XCRemoteSwiftPackageReference "NetworkPlugins" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ihoorados/NetworkPlugins.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		70A881BA2932886000531C05 /* NetworkPlugins */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 70A881B92932886000531C05 /* XCRemoteSwiftPackageReference "NetworkPlugins" */;
+			productName = NetworkPlugins;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		70102BD2293164D600E8E99B /* PassNetwork.xcdatamodeld */ = {

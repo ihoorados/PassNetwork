@@ -21,8 +21,8 @@ struct ContentView: View {
             TabView(selection: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Selection@*/.constant(1)/*@END_MENU_TOKEN@*/) {
                 Workspace().tabItem {
                     Text("Main")
-                }
-                Text("Tab Content 2").tabItem { /*@START_MENU_TOKEN@*/Text("Tab Label 2")/*@END_MENU_TOKEN@*/ }.tag(2)
+                }.padding()
+                Text("Collections").tabItem { Text("Collections") }.tag(2)
             }.background(Color.red)
         }
     }
