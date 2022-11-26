@@ -16,6 +16,7 @@
 		70102BDE293164D600E8E99B /* PassNetworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70102BDD293164D600E8E99B /* PassNetworkTests.swift */; };
 		70102BE8293164D600E8E99B /* PassNetworkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70102BE7293164D600E8E99B /* PassNetworkUITests.swift */; };
 		70102BEA293164D600E8E99B /* PassNetworkUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70102BE9293164D600E8E99B /* PassNetworkUITestsLaunchTests.swift */; };
+		70102BF72931653A00E8E99B /* Workspace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70102BF62931653A00E8E99B /* Workspace.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		70102BE3293164D600E8E99B /* PassNetworkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PassNetworkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		70102BE7293164D600E8E99B /* PassNetworkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassNetworkUITests.swift; sourceTree = "<group>"; };
 		70102BE9293164D600E8E99B /* PassNetworkUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassNetworkUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		70102BF62931653A00E8E99B /* Workspace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workspace.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 			children = (
 				70102BC7293164D400E8E99B /* PassNetworkApp.swift */,
 				70102BC9293164D400E8E99B /* ContentView.swift */,
+				70102BF62931653A00E8E99B /* Workspace.swift */,
 				70102BCB293164D600E8E99B /* Assets.xcassets */,
 				70102BD0293164D600E8E99B /* Persistence.swift */,
 				70102BD2293164D600E8E99B /* PassNetwork.xcdatamodeld */,
@@ -265,6 +268,7 @@
 			files = (
 				70102BD1293164D600E8E99B /* Persistence.swift in Sources */,
 				70102BD4293164D600E8E99B /* PassNetwork.xcdatamodeld in Sources */,
+				70102BF72931653A00E8E99B /* Workspace.swift in Sources */,
 				70102BCA293164D400E8E99B /* ContentView.swift in Sources */,
 				70102BC8293164D400E8E99B /* PassNetworkApp.swift in Sources */,
 			);
@@ -432,6 +436,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -460,6 +465,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
