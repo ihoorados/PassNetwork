@@ -11,29 +11,66 @@ struct KeyValueView: View {
 
     @State private var key: String = ""
     @State private var value: String = ""
+    @State private var toggle: Bool = true
 
     var body: some View {
 
-        List{
+
+        VStack{
 
             HStack{
-                Text("Key")
-                Spacer()
-                Text("Value")
-                Spacer()
-            }
 
-            HStack{
+                Toggle(isOn: $toggle) {
+                }.labelsHidden()
+
+                Spacer()
+                Spacer()
+                Spacer()
+                Spacer()
 
                 TextField("Enter Key", text: $key)
                 .textFieldStyle(.roundedBorder)
                 .disableAutocorrection(true)
-                .frame(height: 44.0)
 
                 TextField("Enter Value", text: $value)
                 .textFieldStyle(.roundedBorder)
                 .disableAutocorrection(true)
-                .frame(height: 44.0)
+            }
+            HStack{
+
+                Toggle(isOn: $toggle) {
+                }.labelsHidden()
+
+                Spacer()
+                Spacer()
+                Spacer()
+                Spacer()
+
+                TextField("Enter Key", text: $key)
+                .textFieldStyle(.roundedBorder)
+                .disableAutocorrection(true)
+
+                TextField("Enter Value", text: $value)
+                .textFieldStyle(.roundedBorder)
+                .disableAutocorrection(true)
+            }
+            HStack{
+
+                Toggle(isOn: $toggle) {
+                }.labelsHidden()
+
+                Spacer()
+                Spacer()
+                Spacer()
+                Spacer()
+
+                TextField("Enter Key", text: $key)
+                .textFieldStyle(.roundedBorder)
+                .disableAutocorrection(true)
+
+                TextField("Enter Value", text: $value)
+                .textFieldStyle(.roundedBorder)
+                .disableAutocorrection(true)
             }
         }
     }
