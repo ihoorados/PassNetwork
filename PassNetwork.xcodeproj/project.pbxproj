@@ -18,6 +18,7 @@
 		70102BEA293164D600E8E99B /* PassNetworkUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70102BE9293164D600E8E99B /* PassNetworkUITestsLaunchTests.swift */; };
 		70102BF72931653A00E8E99B /* Workspace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70102BF62931653A00E8E99B /* Workspace.swift */; };
 		70102BF9293217D900E8E99B /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70102BF8293217D900E8E99B /* SearchBar.swift */; };
+		70102BFB293233CD00E8E99B /* KeyValueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70102BFA293233CC00E8E99B /* KeyValueView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		70102BE9293164D600E8E99B /* PassNetworkUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassNetworkUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		70102BF62931653A00E8E99B /* Workspace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workspace.swift; sourceTree = "<group>"; };
 		70102BF8293217D900E8E99B /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		70102BFA293233CC00E8E99B /* KeyValueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyValueView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 				70102BC7293164D400E8E99B /* PassNetworkApp.swift */,
 				70102BC9293164D400E8E99B /* ContentView.swift */,
 				70102BF62931653A00E8E99B /* Workspace.swift */,
+				70102BFA293233CC00E8E99B /* KeyValueView.swift */,
 				70102BF8293217D900E8E99B /* SearchBar.swift */,
 				70102BCB293164D600E8E99B /* Assets.xcassets */,
 				70102BD0293164D600E8E99B /* Persistence.swift */,
@@ -275,6 +278,7 @@
 				70102BCA293164D400E8E99B /* ContentView.swift in Sources */,
 				70102BC8293164D400E8E99B /* PassNetworkApp.swift in Sources */,
 				70102BF9293217D900E8E99B /* SearchBar.swift in Sources */,
+				70102BFB293233CD00E8E99B /* KeyValueView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
