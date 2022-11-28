@@ -10,7 +10,13 @@ import SwiftUI
 struct ResponseView: View {
     var body: some View {
 
-        HStack {
+        VStack {
+
+            HStack{
+                Spacer()
+                Text("Status Code")
+                    .foregroundColor(.green)
+            }.padding()
 
             Spacer()
             Text("Response")

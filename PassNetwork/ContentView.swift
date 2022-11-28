@@ -18,11 +18,27 @@ struct ContentView: View {
 
     var body: some View {
         NavigationView {
+
             TabView(selection: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Selection@*/.constant(1)/*@END_MENU_TOKEN@*/) {
+
+
                 Workspace().tabItem {
-                    Text("Main")
+                    Image(systemName: "macpro.gen3.server")
+                    Text("Request")
                 }.padding()
-                Text("Collections").tabItem { Text("Collections") }.tag(2)
+
+                Text("Collections").tabItem {
+
+                    Image(systemName: "mail.stack")
+                    Text("Collections")
+                }.tag(2)
+
+                Text("Settings").tabItem {
+
+                    Image(systemName: "gear")
+                    Text("Settings")
+                }.tag(2)
+
             }.background(Color.red)
         }
     }

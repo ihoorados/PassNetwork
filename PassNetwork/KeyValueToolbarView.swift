@@ -11,6 +11,8 @@ struct KeyValueToolbarView: View {
     var body: some View {
 
         HStack{
+
+            Spacer()
             Menu("Params") {
                 Text("Params")
                 Text("Header")
@@ -22,12 +24,6 @@ struct KeyValueToolbarView: View {
             .foregroundColor(.white)
             .cornerRadius(8.0)
             .font(.headline)
-            Text("Key")
-                .font(.headline)
-            Spacer()
-            Text("Value")
-                .font(.headline)
-            Spacer()
         }
     }
 }
