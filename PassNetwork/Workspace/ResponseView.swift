@@ -13,21 +13,58 @@ struct ResponseView: View {
 
     var body: some View {
 
-        VStack {
+        if case .Loading = model.currentState {
 
-            HStack{
-                Spacer()
-                Text(model.data?.description ?? "")
-                    .foregroundColor(.green)
-            }.padding()
-            Spacer()
-            ScrollView(){
-                
-                Text(model.response?.description ?? "").padding()
+            VStack{
+                Text("Loading")
             }
-            Spacer()
-        }
+        } else if case .Succsess(let data,let response) = model.currentState {
 
+            if let response = response as? HTTPURLResponse{
+
+                VStack {
+                    HStack{
+                        Spacer()
+                        Image(systemName: "globe")
+                            .foregroundColor(.green)
+                        Text(response.statusCode.description)
+                            .foregroundColor(.green)
+
+                    }.padding()
+                    ScrollView(){
+                        Text(data?.description ?? response.description)
+                            .padding()
+                    }
+                }
+            }else{
+                VStack {
+                    Spacer()
+                    ScrollView(){
+                        Text(response?.description ?? "").padding()
+                    }
+                    Spacer()
+                }
+            }
+        } else if case .Failure(let error) = model.currentState {
+            VStack(alignment: .center) {
+                Spacer()
+                Text(error)
+                    .font(.headline.bold())
+                    .multilineTextAlignment(.center)
+                Spacer()
+            }
+            .padding()
+        } else if case .Live = model.currentState{
+
+            VStack {
+
+                Image(systemName: "dot.circle.and.hand.point.up.left.fill")
+                    .padding()
+                Text("Hit Send to get a response")
+                    .foregroundColor(.secondary)
+                    .padding()
+            }
+        }
     }
 }
 

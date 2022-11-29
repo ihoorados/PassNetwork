@@ -32,7 +32,7 @@ struct PublicAPI: NetworkEndPoint {
     var host: String
     var scheme: String
     var url: URL
-    var method: HttpMethod = .post
+    var method: HttpMethod = .get
     var parameters: HttpParameters = [:]
     var headers: HttpHeaders = [:]
 }

@@ -16,24 +16,27 @@ struct SearchBar: View {
 
         HStack() {
 
-            Menu("GET") {
+            Menu(model.endPoint.method.rawValue) {
                 Button("GET"){
-                    print("GET Selected")
+                    model.endPoint.method = .get
                 }
                 Button("POST"){
-                    print("POST Selected")
+                    model.endPoint.method = .post
                 }
                 Button("PUT"){
-                    print("PUT Selected")
+                    model.endPoint.method = .put
                 }
             }
-            .frame(width: 60.0,height: 34.0)
+            .frame(width: 66.0,height: 34.0)
             .background(Color.gray)
             .foregroundColor(.white)
             .cornerRadius(8.0)
             .font(.headline)
 
             TextField("Enter request URL", text: $requestUrl)
+                .onAppear(perform: {
+                    self.requestUrl = model.endPoint.url.description
+                })
             .textFieldStyle(.roundedBorder)
             .disableAutocorrection(true)
             .frame(height: 44.0)
@@ -42,7 +45,7 @@ struct SearchBar: View {
 
                 
                 self.requestUrl = PublicAPI.init().url.description
-                self.model.start()
+                self.model.request()
             }
             .frame(width: 64.0,height: 34.0)
             .background(Color.blue)

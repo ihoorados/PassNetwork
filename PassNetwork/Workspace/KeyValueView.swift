@@ -15,54 +15,14 @@ struct KeyValueView: View {
 
     var body: some View {
 
-
         VStack{
 
             HStack{
 
-                Toggle(isOn: $toggle) {
-                }.labelsHidden()
-
-                Spacer()
-                Spacer()
-                Spacer()
-                Spacer()
-
-                TextField("Enter Key", text: $key)
-                .textFieldStyle(.roundedBorder)
-                .disableAutocorrection(true)
-
-                TextField("Enter Value", text: $value)
-                .textFieldStyle(.roundedBorder)
-                .disableAutocorrection(true)
-            }
-            HStack{
-
-                Toggle(isOn: $toggle) {
-                }.labelsHidden()
-
-                Spacer()
-                Spacer()
-                Spacer()
-                Spacer()
-
-                TextField("Enter Key", text: $key)
-                .textFieldStyle(.roundedBorder)
-                .disableAutocorrection(true)
-
-                TextField("Enter Value", text: $value)
-                .textFieldStyle(.roundedBorder)
-                .disableAutocorrection(true)
-            }
-            HStack{
-
-                Toggle(isOn: $toggle) {
-                }.labelsHidden()
-
-                Spacer()
-                Spacer()
-                Spacer()
-                Spacer()
+//                Toggle(isOn: $toggle) {
+//                }.labelsHidden()
+//
+//                Spacer()
 
                 TextField("Enter Key", text: $key)
                 .textFieldStyle(.roundedBorder)

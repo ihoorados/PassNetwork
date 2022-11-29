@@ -9,11 +9,31 @@ import SwiftUI
 
 struct KeyValueColloctions: View {
 
+    @ObservedObject private var model = SingleRequestModel.shared
+
     var body: some View {
 
-        GroupBox() {
-            KeyValueToolbarView()
-            KeyValueView()
+        ScrollView{
+            
+            GroupBox(label:
+                Label("Parameters", systemImage: "building.columns")
+            ) {
+
+                KeyValueView()
+                KeyValueView()
+            }
+
+            GroupBox(label:
+                Label("Headers", systemImage: "building.columns")
+            ) {
+
+                KeyValueView()
+                KeyValueView()
+            }
+
+            ResponseView()
+                .background(Color(UIColor.secondarySystemBackground))
+                .cornerRadius(12.0)
         }
     }
 }

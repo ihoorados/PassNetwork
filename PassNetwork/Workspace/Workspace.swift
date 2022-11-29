@@ -14,14 +14,14 @@ struct Workspace: View {
     var body: some View {
 
         VStack{
+
             Text("Pass Network 2022")
                 .foregroundColor(.gray)
                 .font(.footnote)
             SearchBar()
+
+            
             KeyValueColloctions()
-            ResponseView()
-                .background(Color(UIColor.secondarySystemBackground))
-                .cornerRadius(12.0)
         }
 
 //        if case .LOADING = model.currentState {
