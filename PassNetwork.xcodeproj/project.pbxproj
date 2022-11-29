@@ -23,6 +23,9 @@
 		70102BFF29323A0000E8E99B /* KeyValueToolbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70102BFE29323A0000E8E99B /* KeyValueToolbarView.swift */; };
 		70102C012932420500E8E99B /* ResponseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70102C002932420500E8E99B /* ResponseView.swift */; };
 		70A881BB2932886000531C05 /* NetworkPlugins in Frameworks */ = {isa = PBXBuildFile; productRef = 70A881BA2932886000531C05 /* NetworkPlugins */; };
+		70B18DE329353085006349CD /* MainRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B18DE229353085006349CD /* MainRepository.swift */; };
+		70B18DE62935347D006349CD /* PublicAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B18DE52935347D006349CD /* PublicAPI.swift */; };
+		70B18DE92935ED32006349CD /* SingleRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B18DE82935ED32006349CD /* SingleRequestModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +64,9 @@
 		70102BFC2932370300E8E99B /* KeyValueColloctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyValueColloctions.swift; sourceTree = "<group>"; };
 		70102BFE29323A0000E8E99B /* KeyValueToolbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyValueToolbarView.swift; sourceTree = "<group>"; };
 		70102C002932420500E8E99B /* ResponseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseView.swift; sourceTree = "<group>"; };
+		70B18DE229353085006349CD /* MainRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRepository.swift; sourceTree = "<group>"; };
+		70B18DE52935347D006349CD /* PublicAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicAPI.swift; sourceTree = "<group>"; };
+		70B18DE82935ED32006349CD /* SingleRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleRequestModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,18 +118,15 @@
 		70102BC6293164D400E8E99B /* PassNetwork */ = {
 			isa = PBXGroup;
 			children = (
-				70102BC9293164D400E8E99B /* ContentView.swift */,
-				70102BF62931653A00E8E99B /* Workspace.swift */,
-				70102BC7293164D400E8E99B /* PassNetworkApp.swift */,
-				70102BFC2932370300E8E99B /* KeyValueColloctions.swift */,
-				70102C002932420500E8E99B /* ResponseView.swift */,
-				70102BFE29323A0000E8E99B /* KeyValueToolbarView.swift */,
-				70102BFA293233CC00E8E99B /* KeyValueView.swift */,
-				70102BF8293217D900E8E99B /* SearchBar.swift */,
 				70102BCB293164D600E8E99B /* Assets.xcassets */,
 				70102BD0293164D600E8E99B /* Persistence.swift */,
 				70102BD2293164D600E8E99B /* PassNetwork.xcdatamodeld */,
 				70102BCD293164D600E8E99B /* Preview Content */,
+				70102BC7293164D400E8E99B /* PassNetworkApp.swift */,
+				70102BC9293164D400E8E99B /* ContentView.swift */,
+				70B18DE429353441006349CD /* API */,
+				701FA8B2293607C500EB708A /* Model */,
+				70B18DE729353771006349CD /* Workspace */,
 			);
 			path = PassNetwork;
 			sourceTree = "<group>";
@@ -151,6 +154,36 @@
 				70102BE9293164D600E8E99B /* PassNetworkUITestsLaunchTests.swift */,
 			);
 			path = PassNetworkUITests;
+			sourceTree = "<group>";
+		};
+		701FA8B2293607C500EB708A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				70B18DE82935ED32006349CD /* SingleRequestModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		70B18DE429353441006349CD /* API */ = {
+			isa = PBXGroup;
+			children = (
+				70B18DE52935347D006349CD /* PublicAPI.swift */,
+				70B18DE229353085006349CD /* MainRepository.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		70B18DE729353771006349CD /* Workspace */ = {
+			isa = PBXGroup;
+			children = (
+				70102BF62931653A00E8E99B /* Workspace.swift */,
+				70102BFC2932370300E8E99B /* KeyValueColloctions.swift */,
+				70102C002932420500E8E99B /* ResponseView.swift */,
+				70102BFA293233CC00E8E99B /* KeyValueView.swift */,
+				70102BFE29323A0000E8E99B /* KeyValueToolbarView.swift */,
+				70102BF8293217D900E8E99B /* SearchBar.swift */,
+			);
+			path = Workspace;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -293,8 +326,11 @@
 				70102BD4293164D600E8E99B /* PassNetwork.xcdatamodeld in Sources */,
 				70102BF72931653A00E8E99B /* Workspace.swift in Sources */,
 				70102BFD2932370300E8E99B /* KeyValueColloctions.swift in Sources */,
+				70B18DE329353085006349CD /* MainRepository.swift in Sources */,
 				70102BCA293164D400E8E99B /* ContentView.swift in Sources */,
 				70102C012932420500E8E99B /* ResponseView.swift in Sources */,
+				70B18DE92935ED32006349CD /* SingleRequestModel.swift in Sources */,
+				70B18DE62935347D006349CD /* PublicAPI.swift in Sources */,
 				70102BC8293164D400E8E99B /* PassNetworkApp.swift in Sources */,
 				70102BF9293217D900E8E99B /* SearchBar.swift in Sources */,
 				70102BFB293233CD00E8E99B /* KeyValueView.swift in Sources */,

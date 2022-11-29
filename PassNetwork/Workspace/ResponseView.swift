@@ -8,18 +8,23 @@
 import SwiftUI
 
 struct ResponseView: View {
+
+    @ObservedObject private var model = SingleRequestModel.shared
+
     var body: some View {
 
         VStack {
 
             HStack{
                 Spacer()
-                Text("Status Code")
+                Text(model.data?.description ?? "")
                     .foregroundColor(.green)
             }.padding()
-
             Spacer()
-            Text("Response")
+            ScrollView(){
+                
+                Text(model.response?.description ?? "").padding()
+            }
             Spacer()
         }
 
