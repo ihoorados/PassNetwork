@@ -177,8 +177,8 @@
 			isa = PBXGroup;
 			children = (
 				70102BF62931653A00E8E99B /* Workspace.swift */,
-				70102BFC2932370300E8E99B /* KeyValueColloctions.swift */,
 				70102C002932420500E8E99B /* ResponseView.swift */,
+				70102BFC2932370300E8E99B /* KeyValueColloctions.swift */,
 				70102BFA293233CC00E8E99B /* KeyValueView.swift */,
 				70102BFE29323A0000E8E99B /* KeyValueToolbarView.swift */,
 				70102BF8293217D900E8E99B /* SearchBar.swift */,

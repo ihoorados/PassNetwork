@@ -16,8 +16,6 @@ struct PublicAPI: NetworkEndPoint {
 
     init() {
 
-        let headers: HttpHeaders = [:]
-        self.headers = headers
         self.url = URL(string: "https://www.7timer.info/bin/astro.php?lon=113.2&lat=23.1&ac=0&unit=metric&output=json&tzshift=0")!
         self.host = ""
         self.path = ""
@@ -33,6 +31,6 @@ struct PublicAPI: NetworkEndPoint {
     var scheme: String
     var url: URL
     var method: HttpMethod = .get
-    var parameters: HttpParameters = [:]
-    var headers: HttpHeaders = [:]
+    var parameters: HttpParameters = ["testKey":"testValue","testKey1":"testValue"]
+    var headers: HttpHeaders = ["testKey":"testValue","testKey1":"testValue","testKey2":"testValue"]
 }

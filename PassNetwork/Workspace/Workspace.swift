@@ -19,9 +19,23 @@ struct Workspace: View {
                 .foregroundColor(.gray)
                 .font(.footnote)
             SearchBar()
+            GroupBox(label:
+                Label("Parameters", systemImage: "building.columns")
+            ) {
 
-            
-            KeyValueColloctions()
+                KeyValueColloctions()
+            }
+            GroupBox(label:
+                Label("Parameters", systemImage: "building.columns")
+            ) {
+
+                KeyValueColloctions()
+            }
+            ResponseView()
+                .background(Color(UIColor.secondarySystemBackground))
+                .cornerRadius(12.0)
+
+            Spacer()
         }
 
 //        if case .LOADING = model.currentState {

@@ -43,8 +43,6 @@ struct SearchBar: View {
 
             Button("Send") {
 
-                
-                self.requestUrl = PublicAPI.init().url.description
                 self.model.request()
             }
             .frame(width: 64.0,height: 34.0)

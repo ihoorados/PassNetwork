@@ -13,28 +13,27 @@ struct KeyValueColloctions: View {
 
     var body: some View {
 
-        ScrollView{
-            
-            GroupBox(label:
-                Label("Parameters", systemImage: "building.columns")
-            ) {
+        VStack{
 
-                KeyValueView()
-                KeyValueView()
+            ForEach(model.params, id: \.self) { data in
+                HStack{
+
+                    KeyValueView(key: data, value: "Sample", advance: nil)
+                }
             }
-
-            GroupBox(label:
-                Label("Headers", systemImage: "building.columns")
-            ) {
-
-                KeyValueView()
-                KeyValueView()
-            }
-
-            ResponseView()
-                .background(Color(UIColor.secondarySystemBackground))
-                .cornerRadius(12.0)
+            .onDelete(perform: onDelete)
+            .onMove(perform: onMove)
         }
+    }
+
+    // 2.
+    private func onDelete(offsets: IndexSet) {
+        model.params.remove(atOffsets: offsets)
+    }
+
+    // 3.
+    private func onMove(source: IndexSet, destination: Int) {
+        model.params.move(fromOffsets: source, toOffset: destination)
     }
 }
 

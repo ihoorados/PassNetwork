@@ -32,8 +32,9 @@ protocol SingleRequest: ObservableObject {
 final class SingleRequestModel: NSObject, ObservableObject, SingleRequest {
 
     init(endpoint: NetworkEndPoint = PublicAPI()) {
-
         self.endPoint = endpoint
+        super.init()
+        self.params = self.getKeysParam()
     }
 
     // MARK: Shared instance
@@ -49,6 +50,8 @@ final class SingleRequestModel: NSObject, ObservableObject, SingleRequest {
     @Published var data: Data? = nil
     @Published var error: Error? = nil
     @Published var currentState: SingleRequestModelState = .Live
+
+    @Published var params: [String] = []
 
     // MARK: Public Functions
     func request(){
@@ -70,5 +73,31 @@ final class SingleRequestModel: NSObject, ObservableObject, SingleRequest {
                 self.response = response
                 self.data = data
             }.store(in: &cancelables)
+    }
+
+
+    func addHeader(key: String, value: Any){
+
+    }
+
+    func removeHeader(key: String, value: Any){
+
+    }
+
+    func addParam(key: String, value: Any){
+
+    }
+
+    func removeParam(key: String, value: Any){
+
+    }
+
+    func getKeysParam() -> [String]{
+
+        var keys: [String] = []
+        endPoint.parameters?.keys.forEach({ key in
+            keys.append(key)
+        })
+        return keys
     }
 }
