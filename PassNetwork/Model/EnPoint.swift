@@ -10,6 +10,7 @@ import NetworkPlugins
 
 struct EndPoint: Equatable{
 
+    var id: UUID = UUID()
     var path: String
     var host: String
     var scheme: String

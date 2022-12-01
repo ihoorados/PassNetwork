@@ -27,6 +27,7 @@
 		70F49A482939430B00BE608D /* AppReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F49A472939430B00BE608D /* AppReducer.swift */; };
 		70F49A4B293943F200BE608D /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 70F49A4A293943F200BE608D /* ComposableArchitecture */; };
 		70F49A4D293943F600BE608D /* Dependencies in Frameworks */ = {isa = PBXBuildFile; productRef = 70F49A4C293943F600BE608D /* Dependencies */; };
+		70F49A4F293966E600BE608D /* Collections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F49A4E293966E500BE608D /* Collections.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		70F49A432939412500BE608D /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
 		70F49A45293942A400BE608D /* AppAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAction.swift; sourceTree = "<group>"; };
 		70F49A472939430B00BE608D /* AppReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppReducer.swift; sourceTree = "<group>"; };
+		70F49A4E293966E500BE608D /* Collections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collections.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,7 +128,6 @@
 				70102BD2293164D600E8E99B /* PassNetwork.xcdatamodeld */,
 				70102BCD293164D600E8E99B /* Preview Content */,
 				70F49A3E293938F200BE608D /* Application */,
-				70B18DE82935ED32006349CD /* SingleRequestEngine.swift */,
 				70B18DE429353441006349CD /* API */,
 				701FA8B2293607C500EB708A /* Model */,
 			);
@@ -163,6 +164,7 @@
 			children = (
 				70F49A412939402300BE608D /* EnPoint.swift */,
 				70F49A432939412500BE608D /* Response.swift */,
+				70F49A4E293966E500BE608D /* Collections.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -170,6 +172,7 @@
 		70B18DE429353441006349CD /* API */ = {
 			isa = PBXGroup;
 			children = (
+				70B18DE82935ED32006349CD /* SingleRequestEngine.swift */,
 				70B18DE52935347D006349CD /* PublicAPI.swift */,
 				70B18DE229353085006349CD /* MainRepository.swift */,
 			);
@@ -338,6 +341,7 @@
 				70102BD4293164D600E8E99B /* PassNetwork.xcdatamodeld in Sources */,
 				70B18DE329353085006349CD /* MainRepository.swift in Sources */,
 				70102BCA293164D400E8E99B /* ContentView.swift in Sources */,
+				70F49A4F293966E600BE608D /* Collections.swift in Sources */,
 				70B18DE92935ED32006349CD /* SingleRequestEngine.swift in Sources */,
 				70F49A442939412500BE608D /* Response.swift in Sources */,
 				70B18DE62935347D006349CD /* PublicAPI.swift in Sources */,

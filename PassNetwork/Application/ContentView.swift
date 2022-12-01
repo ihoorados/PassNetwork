@@ -18,23 +18,30 @@ struct ContentView: View {
 
     var body: some View {
 
-        VStack {
-          self.Workspace()
-          Spacer()
+        NavigationView {
+            List{
+                ForEach(viewStore.collections.endpoints, id: \.id) { endPoint in
+                    NavigationLink(destination: Workspace(endpoint: endPoint)) {
+                        Label(endPoint.url.description, systemImage: "folder")
+                    }
+                }
+            }
         }
     }
 }
 
 extension ContentView{
 
-    func Workspace() -> some View {
+    func Workspace(endpoint: EndPoint) -> some View {
       return VStack{
 
           Text("Pass Network 2022")
               .foregroundColor(.gray)
               .font(.footnote)
-          SearchBar()
+          SearchBar(endpoint: endpoint)
           KeyValueCollections()
+
+          Spacer()
 
           switch viewStore.currentState{
           case .Loading:
@@ -93,11 +100,11 @@ extension ContentView{
       }
     }
 
-    func SearchBar() -> some View{
+    func SearchBar(endpoint: EndPoint) -> some View{
 
         return  HStack() {
 
-            Menu(viewStore.endpoint.method.rawValue) {
+            Menu(endpoint.method.rawValue) {
 
                 Button("GET"){
                     viewStore.send(.setMethod(.get))
@@ -117,7 +124,7 @@ extension ContentView{
 
             TextField("Enter request URL", text: $urlTextFeild)
                 .onAppear(perform: {
-                    self.urlTextFeild = viewStore.endpoint.url.description
+                    self.urlTextFeild = endpoint.url.description
                 })
             .textFieldStyle(.roundedBorder)
             .disableAutocorrection(true)
