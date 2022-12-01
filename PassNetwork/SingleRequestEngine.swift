@@ -10,7 +10,7 @@ import NetworkPlugins
 import Combine
 
 // MARK: UI State Control
-enum SingleRequestModelState {
+enum SingleRequestState: Equatable {
 
     case Live
     case Loading
@@ -24,21 +24,22 @@ protocol SingleRequest: ObservableObject {
     var response: URLResponse? { get set }
     var data: Data? { get set }
     var error: Error? { get set }
-    var currentState: SingleRequestModelState { get set }
+    var currentState: SingleRequestState { get set }
 
     func request()
 }
 
-final class SingleRequestModel: NSObject, ObservableObject, SingleRequest {
+final class SingleRequestEngine: NSObject, ObservableObject, SingleRequest {
 
     init(endpoint: NetworkEndPoint = PublicAPI()) {
         self.endPoint = endpoint
         super.init()
         self.params = self.getKeysParam()
+        self.headers = self.getKeysHeader()
     }
 
     // MARK: Shared instance
-    static let shared = SingleRequestModel()
+    static let shared = SingleRequestEngine()
 
     // MARK: Private Properties
     private let repo = MainRepository()
@@ -49,9 +50,11 @@ final class SingleRequestModel: NSObject, ObservableObject, SingleRequest {
     @Published var response: URLResponse? = nil
     @Published var data: Data? = nil
     @Published var error: Error? = nil
-    @Published var currentState: SingleRequestModelState = .Live
+    @Published var currentState: SingleRequestState = .Live
 
     @Published var params: [String] = []
+    @Published var headers: [String] = []
+    @Published var result: [String:Any] = [:]
 
     // MARK: Public Functions
     func request(){
@@ -72,6 +75,13 @@ final class SingleRequestModel: NSObject, ObservableObject, SingleRequest {
                 self.currentState = .Succsess(data: data, response: response)
                 self.response = response
                 self.data = data
+
+                do {
+                    let json = try JSONSerialization.jsonObject(with: data!, options: []) as? [String : Any]
+                    self.result = json ?? [:]
+                } catch {
+                    print("errorMsg")
+                }
             }.store(in: &cancelables)
     }
 
@@ -99,5 +109,30 @@ final class SingleRequestModel: NSObject, ObservableObject, SingleRequest {
             keys.append(key)
         })
         return keys
+    }
+
+    func getKeysHeader() -> [String]{
+
+        var keys: [String] = []
+        endPoint.headers?.keys.forEach({ key in
+            keys.append(key)
+        })
+        return keys
+    }
+
+    // Model To Json (Dictionary)
+    func modelToJson<T: Codable>(model: T) -> [String: Any]?{
+
+        do {
+
+            var json: [String: Any]? = [:]
+            let jsonEncoder: JSONEncoder = JSONEncoder()
+            let jsonData = try jsonEncoder.encode(model)
+            json = (try JSONSerialization.jsonObject(with: jsonData, options: []) as? [String: Any])
+            return json
+        } catch{
+
+            return nil
+        }
     }
 }

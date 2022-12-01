@@ -16,16 +16,17 @@
 		70102BDE293164D600E8E99B /* PassNetworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70102BDD293164D600E8E99B /* PassNetworkTests.swift */; };
 		70102BE8293164D600E8E99B /* PassNetworkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70102BE7293164D600E8E99B /* PassNetworkUITests.swift */; };
 		70102BEA293164D600E8E99B /* PassNetworkUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70102BE9293164D600E8E99B /* PassNetworkUITestsLaunchTests.swift */; };
-		70102BF72931653A00E8E99B /* Workspace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70102BF62931653A00E8E99B /* Workspace.swift */; };
-		70102BF9293217D900E8E99B /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70102BF8293217D900E8E99B /* SearchBar.swift */; };
-		70102BFB293233CD00E8E99B /* KeyValueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70102BFA293233CC00E8E99B /* KeyValueView.swift */; };
-		70102BFD2932370300E8E99B /* KeyValueColloctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70102BFC2932370300E8E99B /* KeyValueColloctions.swift */; };
-		70102BFF29323A0000E8E99B /* KeyValueToolbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70102BFE29323A0000E8E99B /* KeyValueToolbarView.swift */; };
-		70102C012932420500E8E99B /* ResponseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70102C002932420500E8E99B /* ResponseView.swift */; };
 		70A881BB2932886000531C05 /* NetworkPlugins in Frameworks */ = {isa = PBXBuildFile; productRef = 70A881BA2932886000531C05 /* NetworkPlugins */; };
 		70B18DE329353085006349CD /* MainRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B18DE229353085006349CD /* MainRepository.swift */; };
 		70B18DE62935347D006349CD /* PublicAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B18DE52935347D006349CD /* PublicAPI.swift */; };
-		70B18DE92935ED32006349CD /* SingleRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B18DE82935ED32006349CD /* SingleRequestModel.swift */; };
+		70B18DE92935ED32006349CD /* SingleRequestEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B18DE82935ED32006349CD /* SingleRequestEngine.swift */; };
+		70F49A4029393ED100BE608D /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F49A3F29393ED100BE608D /* AppState.swift */; };
+		70F49A422939402300BE608D /* EnPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F49A412939402300BE608D /* EnPoint.swift */; };
+		70F49A442939412500BE608D /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F49A432939412500BE608D /* Response.swift */; };
+		70F49A46293942A400BE608D /* AppAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F49A45293942A400BE608D /* AppAction.swift */; };
+		70F49A482939430B00BE608D /* AppReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F49A472939430B00BE608D /* AppReducer.swift */; };
+		70F49A4B293943F200BE608D /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 70F49A4A293943F200BE608D /* ComposableArchitecture */; };
+		70F49A4D293943F600BE608D /* Dependencies in Frameworks */ = {isa = PBXBuildFile; productRef = 70F49A4C293943F600BE608D /* Dependencies */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,15 +59,14 @@
 		70102BE3293164D600E8E99B /* PassNetworkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PassNetworkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		70102BE7293164D600E8E99B /* PassNetworkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassNetworkUITests.swift; sourceTree = "<group>"; };
 		70102BE9293164D600E8E99B /* PassNetworkUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassNetworkUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		70102BF62931653A00E8E99B /* Workspace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workspace.swift; sourceTree = "<group>"; };
-		70102BF8293217D900E8E99B /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
-		70102BFA293233CC00E8E99B /* KeyValueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyValueView.swift; sourceTree = "<group>"; };
-		70102BFC2932370300E8E99B /* KeyValueColloctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyValueColloctions.swift; sourceTree = "<group>"; };
-		70102BFE29323A0000E8E99B /* KeyValueToolbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyValueToolbarView.swift; sourceTree = "<group>"; };
-		70102C002932420500E8E99B /* ResponseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseView.swift; sourceTree = "<group>"; };
 		70B18DE229353085006349CD /* MainRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRepository.swift; sourceTree = "<group>"; };
 		70B18DE52935347D006349CD /* PublicAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicAPI.swift; sourceTree = "<group>"; };
-		70B18DE82935ED32006349CD /* SingleRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleRequestModel.swift; sourceTree = "<group>"; };
+		70B18DE82935ED32006349CD /* SingleRequestEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleRequestEngine.swift; sourceTree = "<group>"; };
+		70F49A3F29393ED100BE608D /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		70F49A412939402300BE608D /* EnPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnPoint.swift; sourceTree = "<group>"; };
+		70F49A432939412500BE608D /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		70F49A45293942A400BE608D /* AppAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAction.swift; sourceTree = "<group>"; };
+		70F49A472939430B00BE608D /* AppReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppReducer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +74,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70F49A4D293943F600BE608D /* Dependencies in Frameworks */,
+				70F49A4B293943F200BE608D /* ComposableArchitecture in Frameworks */,
 				70A881BB2932886000531C05 /* NetworkPlugins in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -102,6 +104,7 @@
 				70102BDC293164D600E8E99B /* PassNetworkTests */,
 				70102BE6293164D600E8E99B /* PassNetworkUITests */,
 				70102BC5293164D400E8E99B /* Products */,
+				70F49A49293943F200BE608D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -122,11 +125,10 @@
 				70102BD0293164D600E8E99B /* Persistence.swift */,
 				70102BD2293164D600E8E99B /* PassNetwork.xcdatamodeld */,
 				70102BCD293164D600E8E99B /* Preview Content */,
-				70102BC7293164D400E8E99B /* PassNetworkApp.swift */,
-				70102BC9293164D400E8E99B /* ContentView.swift */,
+				70F49A3E293938F200BE608D /* Application */,
+				70B18DE82935ED32006349CD /* SingleRequestEngine.swift */,
 				70B18DE429353441006349CD /* API */,
 				701FA8B2293607C500EB708A /* Model */,
-				70B18DE729353771006349CD /* Workspace */,
 			);
 			path = PassNetwork;
 			sourceTree = "<group>";
@@ -159,7 +161,8 @@
 		701FA8B2293607C500EB708A /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				70B18DE82935ED32006349CD /* SingleRequestModel.swift */,
+				70F49A412939402300BE608D /* EnPoint.swift */,
+				70F49A432939412500BE608D /* Response.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -173,17 +176,23 @@
 			path = API;
 			sourceTree = "<group>";
 		};
-		70B18DE729353771006349CD /* Workspace */ = {
+		70F49A3E293938F200BE608D /* Application */ = {
 			isa = PBXGroup;
 			children = (
-				70102BF62931653A00E8E99B /* Workspace.swift */,
-				70102C002932420500E8E99B /* ResponseView.swift */,
-				70102BFC2932370300E8E99B /* KeyValueColloctions.swift */,
-				70102BFA293233CC00E8E99B /* KeyValueView.swift */,
-				70102BFE29323A0000E8E99B /* KeyValueToolbarView.swift */,
-				70102BF8293217D900E8E99B /* SearchBar.swift */,
+				70102BC7293164D400E8E99B /* PassNetworkApp.swift */,
+				70102BC9293164D400E8E99B /* ContentView.swift */,
+				70F49A3F29393ED100BE608D /* AppState.swift */,
+				70F49A45293942A400BE608D /* AppAction.swift */,
+				70F49A472939430B00BE608D /* AppReducer.swift */,
 			);
-			path = Workspace;
+			path = Application;
+			sourceTree = "<group>";
+		};
+		70F49A49293943F200BE608D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -204,6 +213,8 @@
 			name = PassNetwork;
 			packageProductDependencies = (
 				70A881BA2932886000531C05 /* NetworkPlugins */,
+				70F49A4A293943F200BE608D /* ComposableArchitecture */,
+				70F49A4C293943F600BE608D /* Dependencies */,
 			);
 			productName = PassNetwork;
 			productReference = 70102BC4293164D400E8E99B /* PassNetwork.app */;
@@ -279,6 +290,7 @@
 			mainGroup = 70102BBB293164D400E8E99B;
 			packageReferences = (
 				70A881B92932886000531C05 /* XCRemoteSwiftPackageReference "NetworkPlugins" */,
+				70F49A3D2939388000BE608D /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
 			);
 			productRefGroup = 70102BC5293164D400E8E99B /* Products */;
 			projectDirPath = "";
@@ -324,17 +336,16 @@
 			files = (
 				70102BD1293164D600E8E99B /* Persistence.swift in Sources */,
 				70102BD4293164D600E8E99B /* PassNetwork.xcdatamodeld in Sources */,
-				70102BF72931653A00E8E99B /* Workspace.swift in Sources */,
-				70102BFD2932370300E8E99B /* KeyValueColloctions.swift in Sources */,
 				70B18DE329353085006349CD /* MainRepository.swift in Sources */,
 				70102BCA293164D400E8E99B /* ContentView.swift in Sources */,
-				70102C012932420500E8E99B /* ResponseView.swift in Sources */,
-				70B18DE92935ED32006349CD /* SingleRequestModel.swift in Sources */,
+				70B18DE92935ED32006349CD /* SingleRequestEngine.swift in Sources */,
+				70F49A442939412500BE608D /* Response.swift in Sources */,
 				70B18DE62935347D006349CD /* PublicAPI.swift in Sources */,
+				70F49A4029393ED100BE608D /* AppState.swift in Sources */,
 				70102BC8293164D400E8E99B /* PassNetworkApp.swift in Sources */,
-				70102BF9293217D900E8E99B /* SearchBar.swift in Sources */,
-				70102BFB293233CD00E8E99B /* KeyValueView.swift in Sources */,
-				70102BFF29323A0000E8E99B /* KeyValueToolbarView.swift in Sources */,
+				70F49A482939430B00BE608D /* AppReducer.swift in Sources */,
+				70F49A422939402300BE608D /* EnPoint.swift in Sources */,
+				70F49A46293942A400BE608D /* AppAction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -667,6 +678,14 @@
 				kind = branch;
 			};
 		};
+		70F49A3D2939388000BE608D /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -674,6 +693,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 70A881B92932886000531C05 /* XCRemoteSwiftPackageReference "NetworkPlugins" */;
 			productName = NetworkPlugins;
+		};
+		70F49A4A293943F200BE608D /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 70F49A3D2939388000BE608D /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+		70F49A4C293943F600BE608D /* Dependencies */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 70F49A3D2939388000BE608D /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = Dependencies;
 		};
 /* End XCSwiftPackageProductDependency section */
 
